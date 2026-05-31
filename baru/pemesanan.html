@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+</head>
+<body bgcolor="#E9F2FC">
+    <center>
+    <table width="100%" cellpadding="10" cellspacing="0" border="0">
+        <tr>
+            <td bgcolor="#0A2540" width="100%" align="center">
+                <h1><font face="tahoma" color="white">FORM PEMESANAN SEPEDA</font></h1>
+            </td>
+        </tr>
+    </table>
+    </center>
+
+    <hr />
+
+    <form action="proses.php" method="post">
+      <table align="center" cellpadding="8">
+        <tr>
+          <td>Nama Lengkap</td>
+          <td>:</td>
+          <td><input type="text" size="40" name="nama" required/></td>
+        </tr>
+
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="jk" value="Laki-laki" required/> Laki-laki
+            <input type="radio" name="jk" value="Perempuan" required/> Perempuan
+          </td>
+        </tr>
+
+        <tr>
+          <td>Alamat</td>
+          <td>:</td>
+          <td>
+            <textarea rows="4" cols="32" name="alamat" required></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>No. HP</td>
+          <td>:</td>
+          <td><input type="text" size="25" name="hp" required/></td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td>:</td>
+          <td><input type="email" size="30" name="email" required/></td>
+        </tr>
+
+        <tr>
+          <td>Produk Sepeda</td>
+          <td>:</td>
+          <td>
+            <select name="produk" required>
+              <option value="">-- Pilih Produk --</option>
+              <option>Polygon Cascade 3</option>
+              <option>United Clovis 5</option>
+              <option>Pacific Noris 3.0</option>
+              <option>Thrill Vanquish 3.0</option>
+              <option>Wimcycle MTB XT</option>
+              <option>Polygon Premier 5</option>
+              <option>Cayon</option>
+              <option>Roadbike Pasific</option>
+              <option>Roadbike Genio</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Jumlah Pesanan</td>
+          <td>:</td>
+          <td><input type="number" min="1" value="1" name="jumlah" required /></td>
+        </tr>
+
+        <tr>
+          <td>Ukuran</td>
+          <td>:</td>
+          <td>
+            <select name="frame" required>
+              <option value="">Pilih Ukuran</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Metode Pembayaran</td>
+          <td>:</td>
+          <td>
+            <input type="radio" name="bayar" value="Transfer Bank" required/> Transfer Bank
+            <br />
+            <input type="radio" name="bayar" value="E-Wallet" required/> E-Wallet
+            <br />
+            <input type="radio" name="bayar" value="COD" required/> COD
+          </td>
+        </tr>
+
+        <tr>
+          <td>Aksesoris Tambahan</td>
+          <td>:</td>
+          <td>
+            <input type="checkbox" name="aksesoris[]" value="Helm" /> Helm
+            <br />
+            <input type="checkbox" name="aksesoris[]" value="Lampu Sepeda"     /> Lampu Sepeda
+            <br />
+            <input type="checkbox" name="aksesoris[]" value="Botol Minum" /> Botol Minum
+            <br />
+            <input type="checkbox" name="aksesoris[]" value="Kunci Sepeda" /> Kunci Sepeda
+          </td>
+        </tr>
+
+        <tr>
+          <td>Tanggal Pengiriman</td>
+          <td>:</td>
+          <td><input type="date" name="tanggal" required/></td>
+        </tr>
+
+        <tr>
+          <td>Catatan</td>
+          <td>:</td>
+          <td>
+            <textarea rows="4" cols="32" name="catatan" required></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3" align="center">
+            <br />
+            <input type="submit" value="Pesan Sekarang" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>
